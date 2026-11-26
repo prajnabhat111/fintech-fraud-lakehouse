@@ -18,7 +18,7 @@ Install the Python dependencies with uv:
 uv sync
 ```
 
-Configure the `dbt_fintech` profile in `~/.dbt/profiles.yml` for your
+Configure the `fraud_analytics` profile in `~/.dbt/profiles.yml` for your
 Databricks connection, then validate the dbt setup and build the project:
 
 ```shell
