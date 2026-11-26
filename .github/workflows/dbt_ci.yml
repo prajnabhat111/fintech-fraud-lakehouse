@@ -1,9 +1,12 @@
 name: dbt CI Pipeline
 on: [push, pull_request]
+
 jobs:
   dbt-build:
     runs-on: ubuntu-latest
-    working-directory: ./fraud_analytics
+    defaults:
+      run:
+        working-directory: ./fraud_analytics
     env:
       DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
       DATABRICKS_HTTP_PATH: ${{ secrets.DATABRICKS_HTTP_PATH }}
