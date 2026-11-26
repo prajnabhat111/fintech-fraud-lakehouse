@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info
+
+# Virtual environments
+.venv/
+venv/
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+
+# Local datasets and generated dbt artifacts
+/data/
+**/target/
+**/dbt_packages/
+**/logs/
+*.log
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
